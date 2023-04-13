@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnkcb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="67dp"
+        android:text="KCB"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btndtb"
+        app:layout_constraintEnd_toStartOf="@+id/btnequity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnequity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="67dp"
+        android:text="EQUITY"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btncoop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnkcb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndtb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="65dp"
+        android:text="DTB"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnabsa"
+        app:layout_constraintEnd_toStartOf="@+id/btncoop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnkcb" />
+
+    <Button
+        android:id="@+id/btncoop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="62dp"
+        android:text="COOP"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnfamily"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btndtb"
+        app:layout_constraintTop_toBottomOf="@+id/btnequity" />
+
+    <Button
+        android:id="@+id/btnabsa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="321dp"
+        android:text="ABSA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnfamily"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndtb" />
+
+    <Button
+        android:id="@+id/btnfamily"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="320dp"
+        android:text="FAMILY"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnabsa"
+        app:layout_constraintTop_toBottomOf="@+id/btncoop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
